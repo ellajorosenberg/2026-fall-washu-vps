@@ -9,8 +9,8 @@
         body {
             font-family: monospace;            
             text-align: center;
-            background-color: rgb(255, 245, 198);
-            color: rgb(0, 39, 90)
+            background-color: rgb(42, 39, 81);
+            color: rgb(42, 39, 81)
         }
         
         p {
@@ -26,7 +26,7 @@
         h1 {
             text-align: center;
             font-size: 50px;
-            color:rgb(0, 39, 90)
+            color:rgb(211, 216, 222)
         }
 
         .custom-margin {
@@ -34,11 +34,11 @@
         }
 
         a {
-            color: rgb(194, 191, 63);
+            color: rgb(226, 223, 41);
         }
 
         .bubble {
-            border: 2px solid rgb(0, 39, 90);
+            border: 2px solid rgb(211, 216, 222);
             border-radius: 20px;
             padding: 20px;
             margin: 20px;
@@ -51,7 +51,7 @@
           .bubble {
             text-align: center;
             border: 3px solid rgb(255, 230, 0);
-            background-color: rgb(255, 246, 164);
+            background-color: rgb(211, 216, 222);
             border-radius: 30px;
             text-align: center;
 
@@ -96,7 +96,6 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            font-size:large
         }
 
         .bubble {
@@ -134,17 +133,11 @@
 
 <body>
 
-<iframe
-    id="musicPlayer"
-    width="200"
-    height="200"
-    src="https://www.youtube.com/embed/pTOC_q0NLTk?enablejsapi=1&loop=1&playlist=pTOC_q0NLTk"
-    allow="autoplay"
-    style="position: fixed; left: -300px; top: -300px;">
-</iframe>
-<main>
+    <main>
 
-        <p style="text-align: center;"><img id="songbirdLogo" src="https://images.squarespace-cdn.com/content/v1/5e8cb91325f93717e1079b8e/1604702351971-271E6O5SGQ8G6TJX9VQT/01_Parent_Logo-Cropped.png" width="600" alt="Alt Text"></p>
+</div>
+
+        <p style="color:aliceblue; text-align: center; font-size:xx-large">Songbird</p>
 
         <nav>
             <a href="#Come visit!">Come Visit!</a>
@@ -171,8 +164,9 @@
 
     <h1><i>Menu</i></h1>
 
-<section id="specials">
     <div class="bubble">
+
+<section id="specials">
     <h2>Seasonal Specials</h2>
 
         <p><b>Farm Sampler</b> <i>18.00</i></p>
@@ -328,7 +322,8 @@
 
 <section id="drinks">
 <div class="bubble">
-<h2>Drinks</h2>
+<h2>Drinks</h2><h2></h2>
+<table>
 
     <p><b>Coffee</b> <i>5.50</i></p> 
 
@@ -376,7 +371,10 @@
 
         <p>2 whipped shots of espresso + condensed milk, served iced</p>
 
-        <div class="bubble alternative">
+</div>
+</section>
+
+<div class="bubble alternative">
     <h2>Alternative Options</h2>
 
         <p><b>Dairy Milk Options:</b></p>
@@ -392,23 +390,19 @@
             <p style="text-indent: 40px;">Almond</p>
 
 </div>
-</div>
 
 
-</section>
-
-
-<section id="about-us">
 <div class="bubble">
     <h2>About Us</h2>
     <p><b>Supporting local isn’t just a philosophy—it’s at the heart of how we cook, connect, and serve.</b></p>
     <p>At Songbird, we believe great mornings start with great ingredients. That’s why our menus sing with the best of every season—featuring fresh, locally-sourced produce, responsibly raised meats, and small-batch goods from nearby farms and purveyors who share our commitment to sustainability.</p>
 </div>
-</section>
 
 
 
 
+
+<section id="about-us">
 <script>
     document.getElementById("songbirdLogo").addEventListener("click", function() {
         document.getElementById("musicPlayer").contentWindow.postMessage(
@@ -417,12 +411,7 @@
         );
     });
 </script>
-
-</main>
-
-
-
-</body>
+</section>
 
 
 </html>
